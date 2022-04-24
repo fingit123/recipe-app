@@ -1,7 +1,11 @@
 .App {
-  /* text-align: center; */
-  /* flex-direction: 'row'; */
+  padding: 15px;
+}
 
+.App-Title {
+  margin: auto;
+  text-align: center;
+  padding: 10px;
 }
 
 .App-logo {
@@ -9,7 +13,28 @@
   pointer-events: none;
 }
 
+.Choose-File {
+  background-color: #f0a500;
+  margin-left: 50%;
+  transform: translate(-50%, 0%)
+}
 
+.subtitles {
+  font-size: 20px;
+  padding: 10px 0 10px 0px;
+  border: 1px solid red;
+}
+
+.imagePreviewWrapper {
+  height: 200px;
+  border-radius: 10px;
+  border: 1px dashed #f0a500;
+}
+
+.imagePreview {
+  margin-left: 50%;
+  transform: translate(-50%, 0%)
+}
 
 .App-header {
   background-color: #282c34;
@@ -27,11 +52,10 @@
 }
 
 .generateButton{
-  background-color: green;
-  width: 200px;
+  background-color: #f0a500;
+  width: 175px;
   margin: 20px;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding: 10px 0 10px 0;
   border-radius: 20px;
   text-align: center;
   /* vertical-align: center;
@@ -44,29 +68,7 @@
 .headerRow{
   display: flex;
 }
-.imagePreview {
-  width: 100px;
-  height: 100px;
-  object-fit: contain;
-}
+
 .ingredientsGrid {
   display: flex;
-}
-
-
-
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
 }

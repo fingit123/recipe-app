@@ -93,22 +93,24 @@ function App() {
     <div className="App">
       {showLoading &&<LoadingModal />}
 
-      <h1>Recipe Generator</h1>
-
-      <input type='file' onChange={imageInputChangeHandler}/>
+      <h1 className="App-Title">Healthy Recipe Generator</h1>
+      <div className="imagePreviewWrapper">
       {imagePreview &&<img src={imagePreview} className='imagePreview' alt="preview" />}
+      </div>
+      <input className="Choose-File" value="testing" type='file' onChange={imageInputChangeHandler}/>
+      
 
       {imagePreview &&<div onClick={generateRecipes} className='generateButton'>Generate Recipes</div>}
 
       {showIngredients &&<div>
-        <h1>Ingredients</h1>
+        <h1 className="subtitles">Ingredients</h1>
         <div className='ingredientsGrid'>
           {allIngredients.map((ingredient) => <IngredientListItem key={ingredient.name} parentArray={selectedIngredients} setParentArray={setSelectedIngredients} item={ingredient}/>)}
         </div>
       </div>}
 
       {showRecipes &&<div>
-        <h1>Recipes</h1>
+        <h1 className="subtitles">Recipes</h1>
         <div className='ingredientsGrid'>
           {makeableRecipes.map((recipe) => <IngredientListItem key={recipe.name} parentArray={makeableRecipes} setParentArray={setMakeableRecipes} item={recipe}/>)}
         </div>
