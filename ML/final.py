@@ -123,7 +123,7 @@ ingredients_list = ['chicken','salt','cucumber']
 #example output
 #[[total fat%, sugar%, sodium%, protein%, saturated fat%, total carbohydrates%], recipe name, calories]
 #[[[72.0, 60.0, 89.0, 126.0, 67.0, 50.0], 'hainanese chicken rice', '1294.6 Calories']
-print(BarTopRecipes(getRecipes(ingredients_list),4))
+BarTopRecipes(getRecipes(ingredients_list),4)
 
 
 
