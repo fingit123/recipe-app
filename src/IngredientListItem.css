@@ -1,0 +1,25 @@
+.image {
+    /* width: 100%;
+    aspect-ratio: 1;
+    object-fit: cover; */
+  
+    /* width: 30%; */
+    /* min-width: 30%; */
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    border-radius: 20px;
+    overflow: hidden;
+  }
+
+.ingredientItemContainer {
+    /* width: 500px;
+    height: 500px */
+    align-items: center;
+    max-width: fit-content;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 15px;
+    border: 1px solid lightgray;
+    margin-right: 20px;
+}
